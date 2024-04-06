@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Blog Sena</title>
 </head>
+
 <body>
-    <h1>hola</h1>
+    <header>
+        <div class="container-titulo">
+            <h1>HaulerNews</h1>
+            <img src="img/imgSena-removebg-preview.png" alt="imagen-sena" id="imagen-sena">
+            <img src="img/logoHaulerPro-removebg-preview.png" alt="imgen-HaulerPro" id="imgen-HaulerPro">
+        </div>
+    </header>
+
+    <section>
+        <button id="btn-addNoticia">Agregar una noticia</button>
+        <h2 style="margin-top: 60px; position: absolute; right: 48vw;">Noticias</h2>
+        <div class="contenidoNew" style="height:550px;overflow: auto;">
+            
+            
+        </div>
+
+        <div class="modal-container" id="modal_container">
+            <div class="contenido-modal">
+                <form>
+                    <label>Titulo</label><br>
+                    <input type="text" id="titulo"><br><br>
+                    <label>Autor</label><br>
+                    <input type="text" id="autor"><br><br>
+                    <label>Fecha</label><br>
+                    <input type="date" id="fecha"><br><br>
+                    <label>Contenido</label><br>
+                    <textarea name="contenido-noticia" id="contenido-noticia" cols="55" rows="4"
+                        placeholder="Escribe tu noticia" id="contenido"></textarea><br><br>
+                    <label>Selecciona una imagen</label><br>
+                    <input type="file" accept="image/*" id="img-file"><br><br>
+                    <label>Selecciona un audio</label><br>
+                    <input type="file" accept="audio/*" id="audio-file"><br><br><br>
+                    <button type="submit" id="btn-publicar" style="display: block;">Publicar</button>
+                    <button type="submit" id="btn-actualizar" style="display: none;">Actualizar</button>
+                    <button type="button" id="btn-salir">Salir</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <script src="/js/app.js"></script>
 </body>
+
 </html>

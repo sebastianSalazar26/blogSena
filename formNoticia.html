@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container-form">
+        <h1>Agrega una noticia</h1>
+        <a href="/index.html">
+            <button class="btn-inicio">inicio</button>
+        </a>
+        <form action="#">
+            <label for="Titulo">Titulo</label><br>
+            <input type="text" id="titulo"><br><br>
+            <label for="autor">Autor</label><br>
+            <input type="text" id="autor"><br><br>
+            <label for="contenido">Contenido</label><br>
+            <textarea name="contenido-noticia" id="contenido-noticia" cols="55" rows="4" placeholder="Escribe tu noticia" id="contenido"></textarea><br><br>
+            <label for="img-file">Selecciona una imagen</label><br> 
+            <input type="file" accept="image/*" id="img-file"><br><br>
+            <label for="audio-file">Selecciona un audio</label><br>
+            <input type="file" accept="audio/*" id="audio_file"><br><br><br>
+            <button type="submit" id="btn-public">Publicar</button>
+        </form>
+    </main>
+</body>
+</html>

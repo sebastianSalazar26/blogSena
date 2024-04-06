@@ -1,0 +1,124 @@
+:root{
+    --primary-color: #fff;
+    --secondary-color:#bde0fe;
+    --third-color:#95adb6;
+    --five-color:gainsboro;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:var(--five-color) ;
+}
+.container-titulo{
+    background-color: var(--third-color);
+    height: 10vh;
+    width: 99vw;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+#imgen-HaulerPro{
+    height: 60px;
+    position: absolute;
+    right: 50px;
+    top: 15px;
+}
+#imagen-sena{
+    height: 60px;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+}
+#btn-addNoticia{
+    background-color: var(--third-color);
+    padding: 10px;
+    top: 15vh;
+    margin: -8px auto 0 auto;
+    border-radius: 5px;
+    position: absolute;
+    left: 45%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contenidoNew{
+    background-color: #8b9fa686;
+    position: fixed;
+    top: 25vh;
+    width: 97vw;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 5px;
+
+    & p {
+        opacity: 0.7;
+    }
+
+    & h3{
+        text-align: center;
+        
+    }
+}
+.modal-container{
+    background-color: #8b9fa67b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.contenido-modal{
+    background-color: var(--five-color);
+    width: 450px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    border: 2px solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.605);
+    text-align: center;
+
+    & input{
+        background-color: var(--five-color);
+        border-radius: 5px;
+        width: 100%;
+    }
+    & textarea{
+        background-color: var(--five-color);
+        border-radius: 5px;
+    }
+    & button{
+        background-color: var(--third-color);
+        height: 6vh;
+        width: 10vw;
+        border-radius: 5px;
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+
+.acciones{
+    margin-right: 50%;
+}
+
+#btn-salir{
+    display: block;
+    position: absolute;
+    right: 38%;
+    bottom: 18.5%;
+}
+
+
+
+
